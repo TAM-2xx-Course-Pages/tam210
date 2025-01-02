@@ -44,7 +44,7 @@
     }
 
     a:hover{
-        color: var(--altgeld-orange);
+        color: var(--altgeld-orange) !important;
     }
 
     .campus .row {
@@ -200,11 +200,19 @@
         transition: all .2s ease-in;
     }
 
-    nav{
-        align-self: start;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
+
+    @media (width > 998px){
+        nav{
+            align-self: start;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    }
+    @media (width <=  998px){
+        nav{
+            position: relative;
+        }
     }
 
     .menu{
@@ -254,7 +262,7 @@
                     </div>
                     <div class="site_name">
                         <a href="/" aria-label="Mechanical Science &amp; Engineering" class="site_name">
-                            <span>TAM 251: Introductory Solid Mechanics, Fall 25</span>
+                            <span>TAM 210/211: Statics, Fall 25</span>
                         </a>
                     </div>
                 </div>
